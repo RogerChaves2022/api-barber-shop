@@ -29,8 +29,6 @@ public class UsuarioServiceImpl implements UsuarioService {
 		}
 		
 		boolean validaSenha = usuario.get().getSenha().equals(senha);
-		System.out.println(senha);
-		System.out.println(usuario.get().getSenha());
 		if(!validaSenha) {
 			throw new ErroAutenticacao("Senha Inválida");
 		}
